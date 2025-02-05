@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+        body {
+            background-color: #ffc0cb;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #d63384;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .no {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will YOU be my Valentine?</h1>
+    <div class="buttons">
+        <button class="yes" onclick="valentineResponse(true)">YES</button>
+        <button class="no" onclick="valentineResponse(false)">NO</button>
+    </div>
+
+    <script>
+        function valentineResponse(isYes) {
+            if (isYes) {
+                alert("💖💖💖");
+            } else {
+                alert("😎 Option Invalid 😎");
+            }
+        }
+    </script>
+
+</body>
+</html>
